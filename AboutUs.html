@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>About Us</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px;
+        }
+
+        .row>div {
+            padding: 10px;
+        }
+
+        .col-6 {
+            flex: 0 0 50%;
+        }
+
+
+
+        .col-4 {
+            flex: 0 0 33.33%;
+        }
+
+        .col-12 {
+            flex: 0 0 100%;
+        }
+
+        .bg_color_primary {
+            background-color: #eaf6fe;
+            background-image: url('./assets/White_wave_bg.gif');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            padding: 15px 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #007bff;
+        }
+
+        .btn-Zen-custom {
+            background-color: #FCFCFD;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            box-shadow: 0 2px 4px rgba(45, 35, 66, 0.2);
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .btn-Zen-custom:hover {
+            transform: translateY(-2px);
+        }
+
+        .animate-slide {
+            animation: slideTopToBottom 1s ease-out forwards;
+        }
+
+        @keyframes slideTopToBottom {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #1976d2;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .col-6 {
+                flex: 0 0 100%;
+                text-align: center;
+            }
+
+            .col-4 {
+                flex: 0 0 100%;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .navbar li {
+                margin-right: 0;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .btn-Zen-custom {
+                font-size: 16px;
+            }
+
+            .container {
+                padding-top: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">LOGO</a></li>
+
+        </ul>
+    </nav>
+
+    <section class="bg_color_primary">
+        <div class="container" style="padding-top: 50px;padding-bottom: 50px;">
+            <div class="row">
+                <div class="col-6" style="display: flex; align-items: center;">
+                    <div>
+                        <h1>About ZEN CSR</h1>
+                        <p>
+                            Zen CSR Ltd, based in High Wycombe, is developing a cloud-native construction project
+                            management platform tailored for construction firms.<br><br>
+                            It aims to streamline workflows, improve team communication, and boost project efficiency
+                            across all phases — from planning and tendering to budgeting, scheduling, and on-site
+                            collaboration.
+                        </p>
+                         <a href="mailto:zhangxiao.xt@gmail.com" style="text-decoration: none; color: inherit;font-weight: 600;">
+                               <button class="btn-Zen-custom">
+                            Contact Now &nbsp;<i class="fa-solid fa-cloud" style="color: #1976d2;"></i>
+                        </button>
+                         </a>
+                     
+                    </div>
+                </div>
+                <div class="col-6" style="display: flex; justify-content: center;">
+                    <img src="assets/About_section.gif" width="90%" class="animate-slide" alt="About section gif">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section >
+        <div class="container" style="padding-top: 50px;padding-bottom: 50px;">
+            <div class="row">
+                <div class="col-6">
+                    <img src="assets/Growth.png" width="90%" alt="Growth image">
+
+                </div>
+                <div class="col-6"  style="display: flex;align-items: center;justify-content: center;background-color: #eaf6fe">
+                    <div style="box-shadow: rgba(100, 108, 111, 0.2) 0px 7px 29px 0px;padding: 15px;">
+                        <h1>Our Story</h1>
+
+                        <p style="color: #555;">
+                            ZeN CSR started as provision of services to charities and found a niche that the bigger
+                            charities had property assets that required property management and thus created a new
+                            business unit to develop property management software to serve both charities and other
+                            businesses
+
+                            <br><br>
+
+                            Our solution also builds in compatibility with UK standards like Uniclass and BIM workflows,
+                            facilitating future integration with architectural and engineering models for clash
+                            detection and supply planning—all to reduce uncertainty, enhance safety, and minimise waste.
+                        </p>
+<br>
+                         <a href="mailto:zhangxiao.xt@gmail.com" style="text-decoration: none; color: inherit;font-weight: 600;">
+                               <button class="btn-Zen-custom">
+                            Contact Now &nbsp;<i class="fa-solid fa-cloud" style="color: #1976d2;"></i>
+                        </button>
+                         </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section >
+        <div class="container" style="text-align: center;">
+            <h1 style="text-align:center">Our Mission & Vision</h1>
+            <div class="row">
+                <div class="col-6">
+                    <img src="assets/Gif_lcon_1.gif" width="20%">
+                    <p>
+                        To develop a robust, UK-compliant construction management solution that streamlines operations,
+                        connects teams on and off-site, and enhances project outcomes through automation, mobility, and
+                        intelligent insights. </p>
+                </div>
+                <div class="col-6">
+                    <img src="assets/Gif_lcon_2.gif" width="20%">
+                    <p>To transform the construction industry by delivering a unified, cloud-native platform that
+                        empowers firms to build smarter, faster, and more efficiently—driven by collaboration, real-time
+                        data, and sustainable practices.</p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer style="background-color: #eaf6fe;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h5>ZEN CSR</h5>
+                    <p>@ Copyright 2025 ZEN CSR LTD. All right reserved.</p>
+                </div>
+                <div class="col-6">
+                    <a href="mailto:zhangxiao.xt@gmail.com"
+                        style="text-decoration: none; color: inherit;font-weight: 600;">Contact us</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

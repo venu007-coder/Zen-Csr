@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Cloud Project Software</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px;
+        }
+
+        .row>div {
+            padding: 10px;
+        }
+
+        .col-6 {
+            flex: 0 0 50%;
+        }
+
+
+
+        .col-4 {
+            flex: 0 0 33.33%;
+        }
+
+        .col-12 {
+            flex: 0 0 100%;
+        }
+
+        .bg_color_primary {
+            background-color: #eaf6fe;
+            background-image: url('./assets/Landing_bg.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            padding: 15px 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #007bff;
+        }
+
+        .btn-Zen-custom {
+            background-color: #FCFCFD;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            box-shadow: 0 2px 4px rgba(45, 35, 66, 0.2);
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .btn-Zen-custom:hover {
+            transform: translateY(-2px);
+        }
+
+        .animate-slide {
+            animation: slideTopToBottom 1s ease-out forwards;
+        }
+
+        @keyframes slideTopToBottom {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #1976d2;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .col-6 {
+                flex: 0 0 100%;
+                text-align: center;
+            }
+
+            .col-4 {
+                flex: 0 0 100%;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .navbar li {
+                margin-right: 0;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .btn-Zen-custom {
+                font-size: 16px;
+            }
+
+            .container {
+                padding-top: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">LOGO</a></li>
+
+        </ul>
+    </nav>
+
+    <section class="bg_color_primary">
+        <div class="container" style="padding-top: 50px;padding-bottom: 50px;">
+            <div class="row">
+                <div class="col-6" style="display: flex; align-items: center;">
+                    <div>
+                        <h1>Cloud Project Software</h1>
+                        <p><b>Empowering Organizations Through Intelligent Property & Project Management</b></p>
+                        <p>
+                            ZEN-CSR offers a cloud-based platform meticulously crafted for efficient property and
+                            project
+                            management, specifically designed to serve the unique needs of charities, nonprofits, and
+                            growing businesses.
+                        </p>
+                             <a href="mailto:zhangxiao.xt@gmail.com" style="text-decoration: none; color: inherit;font-weight: 600;">
+                               <button class="btn-Zen-custom">
+                            Contact Now &nbsp;<i class="fa-solid fa-cloud" style="color: #1976d2;"></i>
+                        </button>
+                         </a>
+                    </div>
+                </div>
+                <div class="col-6" style="display: flex; justify-content: center;">
+                    <img src="assets/Landing_section.gif" width="90%" class="animate-slide" alt="Landing section gif">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="padding-top: 50px;padding-bottom: 50px;">
+            <h1 style="text-align:center">Core Features Of Cloud Project</h1>
+            <div class="row">
+                <div class="col-4" style="display: flex; justify-content: center;align-items: center;">
+                    <ul style="list-style: none;font-size: 16px;">
+                        <li style="margin: 10px"><i class="fa fa-check-circle"
+                                style="font-size:18px;color:#009b5f"></i>&nbsp;&nbsp; Asset Tracking</li>
+                        <li style="margin: 10px"><i class="fa fa-check-circle"
+                                style="font-size:18px;color:#009b5f"></i>&nbsp;&nbsp; Maintenance Reminders</li>
+                        <li style="margin: 10px"><i class="fa fa-check-circle"
+                                style="font-size:18px;color:#009b5f"></i>&nbsp;&nbsp; Secure Document Storage</li>
+                        <li style="margin: 10px"><i class="fa fa-check-circle"
+                                style="font-size:18px;color:#009b5f"></i>&nbsp;&nbsp; Project Lifecycle Management</li>
+                        <li style="margin: 10px"><i class="fa fa-check-circle"
+                                style="font-size:18px;color:#009b5f"></i>&nbsp;&nbsp; Role-based Access Control</li>
+                        <li style="margin: 10px"><i class="fa fa-check-circle"
+                                style="font-size:18px;color:#009b5f"></i>&nbsp;&nbsp; Integration with donation systems
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <img src="assets/Feature_image.gif" width="90%" alt="Feature section gif">
+
+                </div>
+                <div class="col-4" style="display: flex; justify-content: center;align-items: center;">
+                    <div>
+                        <img src="assets/Elements.svg" width="40%" alt="Feature section gif">
+                        <p style="margin-top: 0px; font-size: 14px; color: #555;">
+                            Our cloud-based platform provides a centralized space to manage every aspect of your
+                            property and project needs.
+                            From real-time asset tracking to secure document storage and streamlined task management,
+                            ZEN-CSR ensures your team stays productive and aligned — anytime, anywhere. </p>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <section style="background-color: #fff6f6;">
+        <div class="container" style="padding-top: 50px;padding-bottom: 50px;">
+                        <h1 style="text-align:center">Benefits</h1>
+
+            <div class="row" style="padding-top: 50px;">
+                <div class="col-4">
+                    <i class="fa-solid fa-earth-asia" style="font-size: 40px;color: #5ec3fd;"></i>
+                    <h3>Accessible from anywhere</h3>
+                    <p>Manage your projects and properties from any device, at any time.
+No installation needed — just log in and get started.</p>
+                </div>
+                <div class="col-4">
+                    <i class="fa-solid fa-circle-dollar-to-slot" style="font-size: 40px;color: #009e2f;"></i>
+                    <h3>Cost-effective for charities</h3>
+                    <p>
+                        Designed to be budget-friendly for nonprofits and charitable organizations.
+Get premium features without the enterprise price tag.
+                    </p>
+                </div>
+                <div class="col-4">
+                    <i class="fa-solid fa-file-shield" style="font-size: 40px;color: #2d50e9;"></i>
+                    <h3>Secure and scalable</h3>
+                    <p>
+                        Your data is protected with industry-grade encryption and access control.
+Scale effortlessly as your organization grows.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #eaf6fe;">
+        <div class="container" >
+             <div class="row">
+            <div class="col-6">
+                <h5>ZEN CSR</h5>
+                <p>@ Copyright 2025 ZEN CSR LTD. All right reserved.</p>
+            </div>
+            <div class="col-6">
+                <a href="mailto:zhangxiao.xt@gmail.com" style="text-decoration: none; color: inherit;font-weight: 600;">Contact us</a>
+            </div>
+        </div>
+        </div>
+       
+    </footer>
+</body>
+
+</html>
